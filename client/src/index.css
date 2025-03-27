@@ -1,0 +1,81 @@
+/* Overall card styling: fixed dimensions, flex layout for uniformity */
+.custom-card {
+    max-width: 350px;
+    min-width: 350px;
+    height: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  /* Image container maintains fixed height and centers the image */
+  .image-container {
+    height: 320px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #f7f7f7;  /* Light background to highlight images */
+  }
+  
+  /* The product image now fits within the container without zooming in */
+  .product-image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  
+  /* Card body uses flex layout to distribute content evenly */
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    flex: 1;
+    box-sizing: border-box;
+  }
+  
+  /* Content area: title, description, price */
+  .card-content {
+    flex: 1;  /* Take up available space without affecting footer position */
+  }
+  .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .card-description {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.2; /* Ensure consistent spacing */
+    height: 3em;     /* Force a fixed height (approx. 2 lines) for description */
+    }
+  .card-price {
+    color: #007bff;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Footer area: rating and button always at the bottom */
+  .card-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .card-rating {
+    font-size: 1rem;
+    color: #ff9800;
+    margin: 0; /* Remove extra margin for alignment */
+  }
+  .buy-button {
+    padding: 0.6rem 1.5rem;
+    font-weight: bold;
+    width: 100%;
+  }
+  
