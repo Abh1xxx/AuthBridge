@@ -1,4 +1,5 @@
-# AuthNexus
+# AuthBridge
+
 
 AuthNexus is a full-stack authentication application built using React, Node.js, Express, and MongoDB. This project allows users to register, log in, and access a personalized dashboard.
 
